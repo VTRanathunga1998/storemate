@@ -4,7 +4,7 @@ import { useCart } from "../../context/CartContext";
 
 const ProductCard = ({ card }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const { cart, addToCart, removeFromCart } = useCart();
+  const { addToCart } = useCart();
 
   const rotateImages = () => {
     setCurrentImageIndex((currentImageIndex + 1) % card.images.length);
@@ -17,13 +17,16 @@ const ProductCard = ({ card }) => {
     };
   }, [currentImageIndex]);
 
-  // Memoize the image source to prevent unnecessary re-renders
   const imageSource = useMemo(() => {
     return `/images/${card.images[currentImageIndex]}`;
   }, [currentImageIndex, card.images]);
 
   return (
-    <div key={card.id} className={CardCSS["card"]} onClick={() => addToCart(card)}>
+    <div
+      key={card.id}
+      className={CardCSS["card"]}
+      onClick={() => addToCart(card)}
+    >
       <div className={CardCSS["img-container"]}>
         <img src={imageSource} alt="Not Showing" />
       </div>
