@@ -1,0 +1,116 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "name": "VIVO V29 5G (12GB / 256GB) (Peak Blue)",
+      "code": "VIVO-V29-12-256GB-BLU",
+      "price": 199999,
+      "images": ["watch1.png", "watch2.png", "watch3.png"]
+    },
+    {
+      "id": 2,
+      "name": "Card 2",
+      "code": "This is the description for Card 2",
+      "price": 299999,
+      "images": ["skirt1.png", "skirt2.png", "skirt3.png"]
+    },
+    {
+      "id": 3,
+      "name": "Card 3",
+      "code": "This is the description for Card 3",
+      "price": 99999,
+      "images": ["bag1.png", "bag2.png", "bag3.png"]
+    },
+    {
+      "id": 4,
+      "name": "Card 4",
+      "code": "This is the description for Card 4",
+      "price": 149999,
+      "images": ["shoe1.png", "shoe2.png", "shoe3.png"]
+    },
+    {
+      "id": 5,
+      "name": "Card 5",
+      "code": "This is the description for Card 5",
+      "price": 79999,
+      "images": ["camera1.png", "camera2.png", "camera3.png"]
+    },
+    {
+      "id": 6,
+      "name": "Card 6",
+      "code": "This is the description for Card 6",
+      "price": 249999,
+      "images": ["phone2.png", "phone1.png", "phone3.png"]
+    },
+    {
+      "id": 7,
+      "name": "Card 7",
+      "code": "This is the description for Card 7",
+      "price": 179999,
+      "images": ["shoe2.png", "shoe1.png", "shoe3.png"]
+    },
+    {
+      "id": 8,
+      "name": "Card 8",
+      "code": "This is the description for Card 8",
+      "price": 129999,
+      "images": ["bag1.png", "bag2.png", "bag3.png"]
+    },
+    {
+      "id": 9,
+      "name": "Card 9",
+      "code": "This is the description for Card 9",
+      "price": 299999,
+      "images": ["bag1.png", "bag2.png", "bag3.png"]
+    },
+    {
+      "id": 10,
+      "name": "Card 10",
+      "code": "This is the description for Card 10",
+      "price": 199999,
+      "images": ["skirt1.png", "skirt2.png", "skirt3.png"]
+    },
+    {
+      "id": 11,
+      "name": "Card 11",
+      "code": "This is the description for Card 11",
+      "price": 249999,
+      "images": ["shoe1.png", "shoe2.png", "shoe3.png"]
+    },
+    {
+      "id": 12,
+      "name": "Card 12",
+      "code": "This is the description for Card 12",
+      "price": 79999,
+      "images": ["bag1.png", "bag2.png", "bag3.png"]
+    },
+    {
+      "id": 13,
+      "name": "Card 13",
+      "code": "This is the description for Card 13",
+      "price": 159999,
+      "images": ["shoe1.png", "shoe2.png", "shoe3.png"]
+    },
+    {
+      "id": 14,
+      "name": "Card 14",
+      "code": "This is the description for Card 14",
+      "price": 219999,
+      "images": ["skirt1.png", "skirt2.png", "skirt3.png"]
+    },
+    {
+      "id": 15,
+      "name": "Card 15",
+      "code": "This is the description for Card 15",
+      "price": 99999,
+      "images": ["watch1.png", "watch1.png", "watch1.png"]
+    },
+    {
+      "id": 16,
+      "name": "Card 16",
+      "code": "This is the description for Card 16",
+      "price": 179999,
+      "images": ["shoe1.png", "shoe2.png", "shoe3.png"]
+    }
+  ]
+}

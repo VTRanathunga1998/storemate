@@ -1,0 +1,44 @@
+.product-left-container {
+  flex: 0 0 60%;
+}
+
+.product-selection{
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.custom-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px;
+  margin: 0 10px ;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 100%;
+  font-size: 16px;
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: #ac23e7; 
+  box-shadow: 0 0 5px rgba(159, 42, 237, 0.5); 
+}
+
+.custom-select::after {
+  content: "\25BC"; /* Down arrow character ▼ */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+/* Style the options within the select */
+.custom-select option {
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+}
