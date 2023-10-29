@@ -8,7 +8,7 @@ export const useCart = () => {
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
-  const [totalAmount, setTotalAmount] = useState(0);
+
 
   const addToCart = (product) => {
     // Check if the adding product is in the cart

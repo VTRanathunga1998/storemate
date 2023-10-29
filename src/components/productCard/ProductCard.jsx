@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo, useCallback } from "react";
 import CardCSS from "./ProductCard.module.css";
 import { useCart } from "../../context/CartContext";
 
@@ -6,16 +6,16 @@ const ProductCard = ({ card }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const { addToCart } = useCart();
 
-  const rotateImages = () => {
+  const rotateImages = useCallback(() => {
     setCurrentImageIndex((currentImageIndex + 1) % card.images.length);
-  };
+  }, [currentImageIndex, card.images]);
 
   useEffect(() => {
     const interval = setInterval(rotateImages, 5000);
     return () => {
       clearInterval(interval);
     };
-  }, [currentImageIndex]);
+  }, [rotateImages]);
 
   const imageSource = useMemo(() => {
     return `/images/${card.images[currentImageIndex]}`;
