@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from "react";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 const CartContext = createContext();
 
@@ -8,7 +8,12 @@ export const useCart = () => {
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [totalAmount, setTotalAmount] = useState(0);
 
+  // Function to calculate the total amount
+  const calculateTotalAmount = (cart) => {
+    return cart.reduce((total, item) => total + item.totalAmount, 0);
+  };
 
   const addToCart = (product) => {
     // Check if the adding product is in the cart
@@ -36,16 +41,33 @@ export const CartProvider = ({ children }) => {
     }
 
     setCart(updatedCart);
+
+    // Calculate the totalAmount for the updated cart
+    const updatedTotalAmount = calculateTotalAmount(updatedCart);
+    setTotalAmount(updatedTotalAmount);
   };
 
   const removeFromCart = (productId) => {
     setCart((prevCart) =>
       prevCart.filter((product) => product.id !== productId)
     );
+    
+    // Calculate the totalAmount for the updated cart
+    const updatedTotalAmount = calculateTotalAmount(cart);
+    setTotalAmount(updatedTotalAmount);
   };
+  
+
+  // Use useEffect to recalculate totalAmount when the cart changes
+  useEffect(() => {
+    const updatedTotalAmount = calculateTotalAmount(cart);
+    setTotalAmount(updatedTotalAmount);
+  }, [cart]);
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+    <CartContext.Provider
+      value={{ cart, totalAmount, addToCart, removeFromCart }}
+    >
       {children}
     </CartContext.Provider>
   );

@@ -2,16 +2,16 @@ import NavbarCSS from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
-    <nav className={NavbarCSS["navbar"]}>
-      <div className="nav-date">
+    <nav className={NavbarCSS.navbar}>
+      <div className={NavbarCSS["nav-date"]}>
         <span>2023/10/29</span>
       </div>
-      <div className="nav-brand">
+      <div className={NavbarCSS["nav-brand"]}>
         <span>STOREMATE</span>
       </div>
-      <div className="nav-profile">
+      <div className={NavbarCSS["nav-profile"]}>
         <span>Profile</span>
-        <img src="" alt="pic" />
+        <img src="/images/profile.png" alt="pic" />
       </div>
     </nav>
   );
