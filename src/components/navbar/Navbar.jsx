@@ -37,7 +37,7 @@ const Navbar = () => {
         <span>STOREMATE</span>
       </div>
       <div className={NavbarCSS["nav-profile"]}>
-        <span>Profile</span>
+        <span>Viraj Ranathunga</span>
         <img src="/images/profile.png" alt="pic" />
       </div>
     </nav>

@@ -4,7 +4,7 @@ import { useCart } from "../../../context/CartContext";
 //MUI
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
-import TableCell, { tableCellClasses } from '@mui/material/TableCell';
+import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
@@ -14,10 +14,7 @@ import Tooltip from "@mui/material/Tooltip";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Button from "@mui/material/Button";
 
-import { styled } from '@mui/material/styles';
-
-
-
+import { styled } from "@mui/material/styles";
 
 const ProductLeft = () => {
   const { cart, removeFromCart, totalAmount } = useCart();
@@ -53,10 +50,10 @@ const ProductLeft = () => {
             margin: "10px 0",
           }}
         >
-          <select id="mySelect" class={ProductLeftCSS["custom-select"]}>
+          <select id="mySelect" className={ProductLeftCSS["custom-select"]}>
             <option value="apple">Please Select</option>
           </select>
-          <select id="mySelect" class={ProductLeftCSS["custom-select"]}>
+          <select id="mySelect" className={ProductLeftCSS["custom-select"]}>
             <option value="apple">Please Select</option>
           </select>
         </div>
@@ -68,10 +65,10 @@ const ProductLeft = () => {
             margin: "10px 0",
           }}
         >
-          <select id="mySelect" class={ProductLeftCSS["custom-select"]}>
+          <select id="mySelect" className={ProductLeftCSS["custom-select"]}>
             <option value="apple">Please Select</option>
           </select>
-          <select id="mySelect" class={ProductLeftCSS["custom-select"]}>
+          <select id="mySelect" className={ProductLeftCSS["custom-select"]}>
             <option value="apple">Please Select</option>
           </select>
         </div>
@@ -95,8 +92,12 @@ const ProductLeft = () => {
                     key={key}
                     sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                   >
-                    <StyledTableCell align="center">{cartProduct.quantity}</StyledTableCell>
-                    <StyledTableCell align="left">{cartProduct.name}</StyledTableCell>
+                    <StyledTableCell align="center">
+                      {cartProduct.quantity}
+                    </StyledTableCell>
+                    <StyledTableCell align="left">
+                      {cartProduct.name}
+                    </StyledTableCell>
                     <StyledTableCell align="center">
                       {cartProduct.price} LKR
                     </StyledTableCell>
@@ -115,9 +116,11 @@ const ProductLeft = () => {
                   </StyledTableRow>
                 ))
               ) : (
-                <TableCell colSpan={6} align="center">
-                  No item found
-                </TableCell>
+                <StyledTableRow>
+                  <TableCell colSpan={6} align="center">
+                    No item found
+                  </TableCell>
+                </StyledTableRow>
               )}
             </TableBody>
           </Table>

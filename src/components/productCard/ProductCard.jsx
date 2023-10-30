@@ -34,10 +34,10 @@ const ProductCard = ({ card }) => {
         <span className={CardCSS["product-name"]}>{card.name}</span>
       </div>
       <div>
-        <span className={CardCSS["product-code"]}>{card.code}</span>
+        <span className={CardCSS["product-code"]}>{card.category}</span>
       </div>
       <div>
-        <span className={CardCSS["price"]}>{card.price}</span>
+        <span className={CardCSS["price"]}>{card.price} LKR</span>
       </div>
     </div>
   );
