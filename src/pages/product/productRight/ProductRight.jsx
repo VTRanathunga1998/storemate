@@ -34,22 +34,19 @@ const ProductRight = () => {
   return (
     <div className={ProductRightCSS["product-right-container"]}>
       <div className={ProductRightCSS["product-category"]}>
-        <div
+        <div className={ProductRightCSS["product-category-container"]}
           style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            margin: "10px 0",
+            
           }}
         >
           <select id="mySelect" className={ProductRightCSS["custom-select"]}>
-            <option value="apple">Please Select</option>
+            <option value="apple">Category</option>
           </select>
           <select id="mySelect" className={ProductRightCSS["custom-select"]}>
-            <option value="apple">Please Select</option>
+            <option value="apple">Brand</option>
           </select>
           <select id="mySelect" className={ProductRightCSS["custom-select"]}>
-            <option value="apple">Please Select</option>
+            <option value="apple">Type</option>
           </select>
         </div>
       </div>

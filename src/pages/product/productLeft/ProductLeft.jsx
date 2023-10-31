@@ -33,7 +33,6 @@ const ProductLeft = () => {
     "&:nth-of-type(odd)": {
       backgroundColor: theme.palette.action.hover,
     },
-    // hide last border
     "&:last-child td, &:last-child th": {
       border: 0,
     },
@@ -107,7 +106,9 @@ const ProductLeft = () => {
                     <StyledTableCell align="center">
                       <Tooltip title="Remove">
                         <IconButton
-                          onClick={() => removeFromCart(cartProduct.id)}
+                          onClick={() => {
+                            removeFromCart(cartProduct.id);
+                          }}
                         >
                           <DeleteIcon />
                         </IconButton>

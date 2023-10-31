@@ -29,15 +29,14 @@ nav span {
 }
 
 .nav-profile img {
-  width: 30px; /* Adjust the image size as needed */
-  height: 30px; /* Adjust the image size as needed */
-  border-radius: 50%; /* Round profile image */
-  margin-left: 10px; /* Spacing between text and image */
+  width: 30px; 
+  height: 30px; 
+  border-radius: 50%; 
+  margin-left: 10px; 
 }
 
 .nav-profile span {
   font-size: 16px;
-  margin-right: 10px; /* Spacing between text and image */
+  margin-right: 10px;
 }
 
-/* Add any additional styles as needed */

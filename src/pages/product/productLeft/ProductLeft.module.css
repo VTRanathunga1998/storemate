@@ -10,9 +10,6 @@
 }
 
 .custom-select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   padding: 10px;
   margin: 0 10px;
   border: 1px solid #ccc;
@@ -29,7 +26,7 @@
 }
 
 .custom-select::after {
-  content: "\25BC"; /* Down arrow character ▼ */
+  content: "\25BC";
   position: absolute;
   top: 50%;
   right: 10px;
@@ -48,4 +45,13 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   height: 400px;
   overflow-y: scroll;
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .selected-item {
+    height: auto;
+    max-height: 400px;
+    width: auto;
+  }
 }
